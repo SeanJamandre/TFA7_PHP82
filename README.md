@@ -1,25 +1,8 @@
 # TFA7 Laravel POS
 
-Simple customer and user record management for IT0049. Includes create/edit forms, validation errors and old input, unique usernames, and public 256 × 256 JPEG avatars. Uses Laravel 12, Blade, SQLite, and Intervention Image 3 with GD. No Node or frontend build is needed.
+ Open http://127.0.0.1:8000 in your browser. VS Code Live Server does not run PHP or Laravel.
 
-## Start on Windows in VS Code
 
-1. Extract this ZIP (do not run inside the ZIP). Open the TFA7_PHP82 folder in VS Code.
-2. Install PHP 8.2 or newer and Composer. Enable GD, PDO SQLite, SQLite3, mbstring, OpenSSL, XML/DOM, fileinfo and the usual Laravel PHP extensions. Restart VS Code after installing them. Your PHP 8.2.12 installation is supported.
-3. Open Terminal > New Terminal. In PowerShell, run:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\setup.ps1
-php artisan serve
-```
-
-4. Open http://127.0.0.1:8000 in your browser. VS Code Live Server does not run PHP or Laravel.
-
-The setup script downloads dependencies, creates .env, creates an SQLite database, generates the app key, runs migrations and seeders, and links public storage. Internet access is required for Composer. Dependencies in vendor are not bundled. Keep the generated composer.lock and commit it with your project after installation.
-
-On macOS/Linux: `sh setup.sh`, then `php artisan serve`.
-
-## Manual setup if needed
 
 ```powershell
 composer install
